@@ -1,16 +1,7 @@
-require 'rake/gempackagetask'
+require "bundler/gem_tasks"
 require 'rake/testtask'
 
 task :default => 'test:deep'
-
-## ---------------------------------------------------------------------------------------------------- ##
-## Gem Packaging
-## ---------------------------------------------------------------------------------------------------- ##
-load 'soap4r.gemspec'
-Rake::GemPackageTask.new(SPEC) do |pkg|
-  pkg.need_zip = true
-  pkg.need_tar = true
-end
 
 ## ---------------------------------------------------------------------------------------------------- ##
 ## Unit Testing
