@@ -3,7 +3,7 @@ require File.join(File.dirname(__FILE__), 'lib', 'soap', 'version')
 
 SPEC = Gem::Specification.new do |s|
   s.platform = Gem::Platform::RUBY
-  s.name = 'soap4r-sgonyea'
+  s.name = 'soap4r-ruby19'
   s.summary = "An updated implementation of SOAP 1.1 for Ruby 1.8 and 1.9."
   s.version = SOAP::VERSION::STRING
 
